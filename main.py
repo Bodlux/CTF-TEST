@@ -6,5 +6,8 @@ mydb = mysql.connector.connect(
   password="" # Password Goes Here
 )
 
-print(mydb)
+mycursor = mydb.cursor()
+
+mycursor.execute("CREATE DATABASE commited")
+
 
